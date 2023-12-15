@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* 3) wrap provider around app component */}
-    {/* 4) give provider access to store */}
+    {/* 4) give provider access to store we'll be using in our app*/}
     <Provider store={store}>
       <App />
     </Provider>
