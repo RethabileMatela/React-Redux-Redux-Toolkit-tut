@@ -17,8 +17,11 @@ const userSlice = createSlice({
   },
   reducers: {
     // 4) reducers functions alter values of our app 
+
     // 5) login function takes in two parameters: state and action
-    // state = info about previous and c
+    // state = info about previous and current state 
+    // action = an object containing payload and type 
+    // payload - info you might want to use when changing your state 
     login: () => {
 
     }
