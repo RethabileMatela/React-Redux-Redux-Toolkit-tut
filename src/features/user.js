@@ -5,7 +5,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
-const userSlice = createSlice({
+export const userSlice = createSlice({
   // 3) contains info about the slice
   name: "user",
   initialState: {
@@ -16,14 +16,17 @@ const userSlice = createSlice({
     },
   },
   reducers: {
-    // 4) reducers functions alter values of our app 
+    // 4) reducers functions alter values of our app
 
     // 5) login function takes in two parameters: state and action
-    // state = info about previous and current state 
-    // action = an object containing payload and type 
-    // payload - info you might want to use when changing your state 
-    login: () => {
-
-    }
-  }
+    // state = info about previous and current state
+    // action = an object containing payload and type
+    // payload - info you might want to use when changing your state
+    login: (state, action) => {
+      // 5) take previous state and change it to whatever we get from the payload
+      state.value = action.payload;
+    },
+  },
 });
+
+export default userSlice.reducer;
