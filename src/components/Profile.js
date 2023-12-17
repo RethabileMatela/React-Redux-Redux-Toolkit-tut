@@ -6,7 +6,7 @@ function Profile() {
   //2) access user state using useSelector
   const user =
     useSelector();
-    // 3) useSelector takes in a function which allows you to specify which state you want to use
+    // 3) useSelector takes in a function which allows you to specify which state you want to access
   return (
     <div>
       <h1>Profile Page</h1>
