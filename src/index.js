@@ -5,11 +5,16 @@ import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 // 2) to make store exist inside our application import provider
 import { Provider } from "react-redux";
+//5) import user reducer, name it whatever you want
+import userReducer from "./features/user";
 
 const store = configureStore({
   // 1) inside of function parameters pass a collection of reducers
   // Reducers built-in to redux; take in the previous state and an action and return the newly updated state
-  reducer: {},
+  reducer: {
+    // 6) set userReducer to one of our reducers, now we can access user reducer through out the app
+    user: userReducer,
+  },
 });
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
