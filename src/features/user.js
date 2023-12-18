@@ -29,6 +29,6 @@ export const userSlice = createSlice({
   },
 });
 // 6) access actions you created in order to change state using userSlice.actions
-// 7) access login action/function
+// 7) access login action/function then go to the component you want to alter the value of the state
 export const {login} = userSlice.actions
 export default userSlice.reducer;
