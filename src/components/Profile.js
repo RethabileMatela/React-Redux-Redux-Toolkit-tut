@@ -1,5 +1,5 @@
 import React from "react";
-// 1) display info about our state
+// 1) display info about our state, ACCESS values of our state 
 import { useSelector } from "react-redux";
 
 function Profile() {
