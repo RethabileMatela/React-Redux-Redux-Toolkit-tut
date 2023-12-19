@@ -17,7 +17,11 @@ function Login() {
         onClick={() => {
           // 5) to change the value of our state pass the login action, then pass the payload 
           // containing new values within login action
-          dispatch(login());
+          dispatch(login({
+            name: "Retha",
+            age: 100,
+            email: "mymail@gmail.com",
+          }));
         }}
       >
         Login

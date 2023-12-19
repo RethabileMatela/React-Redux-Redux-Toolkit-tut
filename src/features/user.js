@@ -26,6 +26,8 @@ export const userSlice = createSlice({
       // 5) take previous state and change it to whatever we get from the payload
       state.value = action.payload;
     },
+    // 8) add logout action
+    logout: () => {}
   },
 });
 // 6) access actions you created in order to change state using userSlice.actions
